@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "build": "rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && yarn install"
+    "build": "rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && yarn install && yarn start"
   },
   "keywords": [],
   "author": "",

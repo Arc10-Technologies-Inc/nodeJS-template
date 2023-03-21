@@ -2,8 +2,6 @@ const path = require('path')
 const hbs = require('hbs')
 const express = require('express')
 const cors = require('cors')
-const geocode = require('./utils/geocode')
-const forecast = require('./utils/forecast')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -20,7 +18,7 @@ hbs.registerPartials(partialsPath)
 //// setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-const whitelist = ["http://localhost:3001"]
+const whitelist = ["http://localhost"]
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {

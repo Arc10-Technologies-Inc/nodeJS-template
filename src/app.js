@@ -4,7 +4,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
-const port = process.env.PORT || 3005
+const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../Templates/views')
